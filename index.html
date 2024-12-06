@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+    
+    <form class="d-flex flex-column justify-content-between">
+        <h2>Temperature Conversion</h2>
+        <input type="number" id="textBox" placeholder="0">
+
+        <div>
+            <input type="radio" id="toFahrenheit" name="unit">
+            <label for="toFahrenheit">Celcius <i class="fa-solid fa-arrow-right"></i> Fahrenheit</label>
+        </div>
+
+        <div>
+            <input type="radio" id="toCelcius" name="unit">
+            <label for="toCelcius">Fahrenheit <i class="fa-solid fa-arrow-right"></i> Celcius</label>
+        </div>
+
+        <button type="button" onclick="convert()" class="btn btn-outline-info px-5 fw-bold">Submit</button>
+        <button type="button" onclick="reset()" class="btn btn-outline-danger px-5 fw-bold">Reset</button>
+        <p id="result">Select a unit</p>
+    </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
